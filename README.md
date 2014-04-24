@@ -5,8 +5,9 @@ In Zend Framework 2 view scripts variables can be used like `$this->myVar`. Howe
 exist, there is no warning and it simply returns `null`.
 
 ## The `strict_vars` option
-The class `Zend\View\Variables` has the ability to set an option called `strict_vars`. With this option
-activated (set to `true`), an undefined variable will trigger a warning.
+The class `Zend\View\Variables` has the ability to set an option called `strict_vars` through the
+[`setStrictVars` method](https://github.com/zendframework/zf2/blob/master/library/Zend/View/Variables.php#L70-L80).
+With this option activated (set to `true`), an undefined variable will trigger a notice.
 ```php
 /**
  * Set status of "strict vars" flag
