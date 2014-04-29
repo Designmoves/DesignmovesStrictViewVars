@@ -1,0 +1,21 @@
+{
+    "name": "designmoves/designmovesstrictviewvars",
+    "description": "Zend Framework 2 module for enabling the strict_vars option of Zend\\View\\Variables",
+    "type": "library",
+    "keywords": [
+        "zend",
+        "framework",
+        "zf2",
+        "strict_vars"
+    ],
+    "homepage": "http://www.designmoves.nl/",
+    "license": "BSD-3-Clause",
+    "require": {
+        "php": ">=5.3.23"
+    },
+    "autoload": {
+        "psr-0": {
+            "DesignmovesStrictViewVars": "src/"
+        }
+    }
+}
