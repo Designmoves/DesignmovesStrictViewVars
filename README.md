@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Designmoves/DesignmovesStrictViewVars.svg?branch=master)](https://travis-ci.org/Designmoves/DesignmovesStrictViewVars)
+
 DesignmovesStrictViewVars
 =========================
 
