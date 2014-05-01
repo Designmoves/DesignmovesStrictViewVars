@@ -36,6 +36,7 @@ use PHPUnit_Framework_TestCase;
 use ReflectionMethod;
 use Zend\EventManager\Event;
 use Zend\EventManager\EventManager;
+use Zend\EventManager\SharedEventManager;
 use Zend\View\Model\ViewModel;
 use Zend\View\ViewEvent;
 
@@ -74,6 +75,7 @@ class ViewModelListenerTest extends PHPUnit_Framework_TestCase
     public function testAttachesSetStrictVarsListener()
     {
         $eventManager = new EventManager;
+        $eventManager->setSharedManager(new SharedEventManager);
         $eventManager->attach($this->listener);
 
         $id               = 'Zend\View\View';
