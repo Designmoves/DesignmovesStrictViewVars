@@ -8,4 +8,7 @@ before_script:
   - composer update --prefer-source
 
 script:
-  - ./vendor/bin/phpunit -c test/phpunit.xml
+  - ./vendor/bin/phpunit -c test/phpunit-travis.xml
+
+notifications:
+  email: false
