@@ -10,5 +10,9 @@ before_script:
 script:
   - ./vendor/bin/phpunit --configuration test/phpunit.xml.dist --coverage-clover build/logs/clover.xml
 
+after_script:
+  # Add -v flag to enable logging
+  - php vendor/bin/coveralls
+
 notifications:
   email: false
