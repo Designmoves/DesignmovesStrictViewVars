@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<phpunit bootstrap="Bootstrap.php" colors="true">
+<phpunit
+    bootstrap="Bootstrap.php"
+    colors="true"
+    convertErrorsToExceptions="true"
+    convertNoticesToExceptions="true"
+    convertWarningsToExceptions="true"
+    stopOnError="true"
+    stopOnFailure="true"
+    stopOnIncomplete="true"
+    stopOnSkipped="true"
+    strict="true"
+    verbose="true">
+
   <testsuites>
     <testsuite name="DesignmovesStrictViewVars">
       <directory>./DesignmovesStrictViewVarsTest</directory>
     </testsuite>
   </testsuites>
+
+  <php>
+    <ini name="date.timezone" value="UTC"/>
+    <ini name="error_reporting" value="-1"/>
+  </php>
 
   <!-- For code coverage test -->
   <filter>

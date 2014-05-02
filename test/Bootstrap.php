@@ -36,10 +36,6 @@ use Zend\Mvc\Service\ServiceManagerConfig;
 use Zend\ServiceManager\ServiceManager;
 use RuntimeException;
 
-date_default_timezone_set('Europe/Amsterdam');
-error_reporting(-1);
-chdir(__DIR__);
-
 /**
  * Test bootstrap, for setting up autoloading
  */
@@ -139,5 +135,6 @@ class Bootstrap
     }
 }
 
+chdir(__DIR__);
 Bootstrap::init();
 Bootstrap::chroot();
