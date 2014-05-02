@@ -135,6 +135,22 @@ class Bootstrap
     }
 }
 
+/**
+ * Travis CI specific code
+ */
+if (0 === strpos(__DIR__, '/home/travis/build/')) {
+    $vendorDir = __DIR__ . '/../vendor';
+
+    if (is_file($file = $vendorDir . '/autoload.php')) {
+        require_once $file;
+    } elseif (is_file($file = './vendor/autoload.php')) {
+        require_once $file;
+    } else {
+        throw new RuntimeException('Composer autoload file not found');
+    }
+    return;
+}
+
 chdir(__DIR__);
 Bootstrap::init();
 Bootstrap::chroot();
