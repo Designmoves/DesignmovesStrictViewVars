@@ -27,5 +27,5 @@ With this option activated (set to `true`), an undefined variable will trigger a
 This module makes it possible to set `strict_vars` and allows debugging your code more thoroughly.
 
 ## How to use
-Copy `designmovesstrictviewvars.global.php.dist` to your `config/autoload` folder and rename it to
-`designmovesstrictviewvars.global.php`. You can now change the contents of that file to your needs.
+Copy `designmoves-strict-view-vars.global.php.dist` to your `config/autoload` folder and rename it to
+`designmoves-strict-view-vars.global.php`. You can now change the contents of that file to your needs.
