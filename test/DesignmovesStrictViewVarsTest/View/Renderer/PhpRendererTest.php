@@ -37,6 +37,7 @@ use ReflectionMethod;
 
 /**
  * @coversDefaultClass DesignmovesStrictViewVars\View\Renderer\PhpRenderer
+ * @uses               DesignmovesStrictViewVars\View\Renderer\PhpRenderer
  */
 class PhpRendererTest extends PHPUnit_Framework_TestCase
 {

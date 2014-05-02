@@ -41,6 +41,8 @@ use Zend\View\Resolver\TemplatePathStack;
 
 /**
  * @coversDefaultClass DesignmovesStrictViewVars\Factory\View\Renderer\PhpRendererFactory
+ * @uses               DesignmovesStrictViewVars\Options\ModuleOptions
+ * @uses               DesignmovesStrictViewVars\View\Renderer\PhpRenderer
  */
 class PhpRendererFactoryTest extends PHPUnit_Framework_TestCase
 {

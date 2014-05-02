@@ -42,6 +42,7 @@ use Zend\View\ViewEvent;
 
 /**
  * @coversDefaultClass DesignmovesStrictViewVars\Listener\ViewModelListener
+ * @uses               DesignmovesStrictViewVars\Listener\ViewModelListener
  */
 class ViewModelListenerTest extends PHPUnit_Framework_TestCase
 {

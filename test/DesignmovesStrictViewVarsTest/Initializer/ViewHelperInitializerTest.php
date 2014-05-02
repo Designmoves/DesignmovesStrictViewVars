@@ -41,6 +41,7 @@ use Zend\View\HelperPluginManager;
 
 /**
  * @coversDefaultClass DesignmovesStrictViewVars\Initializer\ViewHelperInitializer
+ * @uses               DesignmovesStrictViewVars\View\Renderer\PhpRenderer
  */
 class ViewHelperInitializerTest extends PHPUnit_Framework_TestCase
 {
@@ -82,8 +83,10 @@ class ViewHelperInitializerTest extends PHPUnit_Framework_TestCase
      */
     public function testInitializeReturnsEarlyWhenNotInstanceOfAbstractHelper()
     {
-        $instance = new stdClass;
-        $this->initializer->initialize($instance, $this->helperPluginManager);
+        $instance    = new stdClass;
+        $returnValue = $this->initializer->initialize($instance, $this->helperPluginManager);
+
+        $this->assertNull($returnValue);
     }
 
     /**

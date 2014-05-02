@@ -38,6 +38,8 @@ use Zend\ServiceManager\ServiceManager;
 
 /**
  * @coversDefaultClass DesignmovesStrictViewVars\Factory\Listener\ViewModelListenerFactory
+ * @uses               DesignmovesStrictViewVars\Listener\ViewModelListener
+ * @uses               DesignmovesStrictViewVars\Options\ModuleOptions
  */
 class ViewModelListenerFactoryTest extends PHPUnit_Framework_TestCase
 {
