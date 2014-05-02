@@ -9,7 +9,8 @@ exist, there is no warning and it simply returns `null`.
 
 ## The `strict_vars` option
 The class `Zend\View\Variables` has the ability to set an option called `strict_vars` through the
-[`Zend\View\Variables::setStrictVars`](https://github.com/zendframework/zf2/blob/master/library/Zend/View/Variables.php#L70-L80):
+[`Zend\View\Variables::setStrictVars`](https://github.com/zendframework/zf2/blob/master/library/Zend/View/Variables.php#L70-L80)
+method:
 ```php
 /**
  * Set status of "strict vars" flag
