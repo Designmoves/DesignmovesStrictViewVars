@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/Designmoves/DesignmovesStrictViewVars.svg?branch=master)](https://travis-ci.org/Designmoves/DesignmovesStrictViewVars)
+[![Coverage Status](https://coveralls.io/repos/Designmoves/DesignmovesStrictViewVars/badge.png)](https://coveralls.io/r/Designmoves/DesignmovesStrictViewVars)
 
 DesignmovesStrictViewVars
 =========================
