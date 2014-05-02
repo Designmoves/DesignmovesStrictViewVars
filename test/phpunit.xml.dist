@@ -27,10 +27,12 @@
   <!-- For code coverage test -->
   <filter>
     <whitelist processUncoveredFilesFromWhitelist="true">
-      <!-- this is the path of the files included in your clover report -->
+      <!-- These are the paths and files included in your clover report -->
+      <file>../Module.php</file>
       <directory suffix=".php">./../src</directory>
     </whitelist>
   </filter>
+
   <logging>
     <!-- and this is where your report will be written -->
     <log type="coverage-clover" target="./clover.xml"/>
