@@ -39,7 +39,7 @@ use Zend\ServiceManager\ServiceManager;
 /**
  * @coversDefaultClass DesignmovesStrictViewVars\Factory\Listener\ViewModelListenerFactory
  */
-class PageListenerFactoryTest extends PHPUnit_Framework_TestCase
+class ViewModelListenerFactoryTest extends PHPUnit_Framework_TestCase
 {
     /**
      * @var ViewModelListenerFactory

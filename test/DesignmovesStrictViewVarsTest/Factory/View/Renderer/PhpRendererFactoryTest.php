@@ -42,7 +42,7 @@ use Zend\View\Resolver\TemplatePathStack;
 /**
  * @coversDefaultClass DesignmovesStrictViewVars\Factory\View\Renderer\PhpRendererFactory
  */
-class PageServiceFactoryTest extends PHPUnit_Framework_TestCase
+class PhpRendererFactoryTest extends PHPUnit_Framework_TestCase
 {
     /**
      * @var PhpRendererFactory
