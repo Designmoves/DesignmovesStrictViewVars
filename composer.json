@@ -6,7 +6,9 @@
         "zend",
         "framework",
         "zf2",
-        "strict_vars"
+        "strict_vars",
+        "strict",
+        "vars"
     ],
     "homepage": "http://www.designmoves.nl/",
     "license": "BSD-3-Clause",
