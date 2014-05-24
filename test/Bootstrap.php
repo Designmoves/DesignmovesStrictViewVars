@@ -29,7 +29,7 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace DesignmovesStrictViewVarsTest;
+namespace DesignmovesStrictViewVars\test;
 
 use Zend\Loader\AutoloaderFactory;
 use Zend\Mvc\Service\ServiceManagerConfig;
