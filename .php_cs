@@ -47,7 +47,7 @@ return Symfony\CS\Config\Config::create()
         /**
          * [all] An empty line feed should precede a return statement.
          */
-        #'return',
+        'return',
         /**
          * [PSR-1] PHP code must use the long <?php ?> tags or the short-echo <?= ?> tags; it must not use
          * the other tag variations.

@@ -131,6 +131,7 @@ class Bootstrap
             }
             $previousDir = $dir;
         }
+
         return $dir . '/' . $path;
     }
 }
@@ -148,6 +149,7 @@ if (0 === strpos(__DIR__, '/home/travis/build/')) {
     } else {
         throw new RuntimeException('Composer autoload file not found');
     }
+
     return;
 }
 

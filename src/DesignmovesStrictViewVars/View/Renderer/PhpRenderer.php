@@ -59,6 +59,7 @@ class PhpRenderer extends BaseRenderer
     public function __get($name)
     {
         parent::vars()->setStrictVars($this->getUseStrictVars());
+
         return parent::__get($name);
     }
 
@@ -69,6 +70,7 @@ class PhpRenderer extends BaseRenderer
     public function get($key)
     {
         parent::vars()->setStrictVars($this->getUseStrictVars());
+
         return parent::get($key);
     }
 
@@ -79,6 +81,7 @@ class PhpRenderer extends BaseRenderer
     public function vars($key = null)
     {
         parent::vars()->setStrictVars($this->getUseStrictVars());
+
         return parent::vars($key);
     }
 

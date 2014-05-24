@@ -45,6 +45,7 @@ class ViewModelListenerFactory implements FactoryInterface
     {
         $moduleOptions = $serviceManager->get('DesignmovesStrictViewVars\Options\ModuleOptions');
         $useStrictVars = $moduleOptions->getUseStrictVars();
+
         return new ViewModelListener($useStrictVars);
     }
 }

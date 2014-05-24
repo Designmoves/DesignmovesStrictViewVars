@@ -53,6 +53,7 @@ class PhpRendererFactory implements FactoryInterface
         $customRenderer = new PhpRenderer($useStrictVars);
         $customRenderer->setHelperPluginManager($helperPluginManager);
         $customRenderer->setResolver($resolver);
+
         return $customRenderer;
     }
 }
