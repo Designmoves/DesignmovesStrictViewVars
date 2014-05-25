@@ -1,5 +1,11 @@
 <?php
 $finder = Symfony\CS\Finder\DefaultFinder::create()
+    ->filter(function (SplFileInfo $file) {
+        $excludedFile = 'test' . DIRECTORY_SEPARATOR . 'Bootstrap.php';
+        if (strpos((string) $file, $excludedFile)) {
+            return false;
+        }
+    })
     ->in(__DIR__);
 
 return Symfony\CS\Config\Config::create()
