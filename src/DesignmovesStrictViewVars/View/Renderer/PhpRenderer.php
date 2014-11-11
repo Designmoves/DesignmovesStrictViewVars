@@ -49,7 +49,6 @@ class PhpRenderer extends BaseRenderer
     {
         parent::__construct(array());
         $this->useStrictVars = $useStrictVars;
-
     }
 
     /**

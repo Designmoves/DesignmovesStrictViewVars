@@ -75,7 +75,6 @@ class ViewHelperInitializerTest extends PHPUnit_Framework_TestCase
 
         $this->renderer = new PhpRenderer(true);
         $this->serviceManager->setService('DesignmovesStrictViewVars\View\Renderer\PhpRenderer', $this->renderer);
-
     }
 
     /**
