@@ -53,7 +53,7 @@ class ModuleTest extends PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->module = new Module;
+        $this->module = new Module();
     }
 
     /**
@@ -81,17 +81,17 @@ class ModuleTest extends PHPUnit_Framework_TestCase
      */
     public function testOnBootstrapAttachesViewModelListener()
     {
-        $serviceManager = new ServiceManager;
+        $serviceManager = new ServiceManager();
 
         $eventManagerMock = $this->getMock('Zend\EventManager\EventManager');
         $serviceManager->setService('EventManager', $eventManagerMock);
-        $serviceManager->setService('Request', new HttpRequest);
-        $serviceManager->setService('Response', new HttpResponse);
+        $serviceManager->setService('Request', new HttpRequest());
+        $serviceManager->setService('Response', new HttpResponse());
 
         $listener = new ViewModelListener(true);
         $serviceManager->setService('DesignmovesStrictViewVars\Listener\ViewModelListener', $listener);
 
-        $event = new MvcEvent;
+        $event = new MvcEvent();
         $application = new Application(array(), $serviceManager);
         $event->setApplication($application);
 

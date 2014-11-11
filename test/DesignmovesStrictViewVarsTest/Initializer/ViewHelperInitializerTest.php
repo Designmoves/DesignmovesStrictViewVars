@@ -67,10 +67,10 @@ class ViewHelperInitializerTest extends PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->initializer = new ViewHelperInitializer;
+        $this->initializer = new ViewHelperInitializer();
 
-        $this->serviceManager      = new ServiceManager;
-        $this->helperPluginManager = new HelperPluginManager;
+        $this->serviceManager      = new ServiceManager();
+        $this->helperPluginManager = new HelperPluginManager();
         $this->helperPluginManager->setServiceLocator($this->serviceManager);
 
         $this->renderer = new PhpRenderer(true);
@@ -82,7 +82,7 @@ class ViewHelperInitializerTest extends PHPUnit_Framework_TestCase
      */
     public function testInitializeReturnsEarlyWhenNotInstanceOfAbstractHelper()
     {
-        $instance    = new stdClass;
+        $instance    = new stdClass();
         $returnValue = $this->initializer->initialize($instance, $this->helperPluginManager);
 
         $this->assertNull($returnValue);
@@ -93,7 +93,7 @@ class ViewHelperInitializerTest extends PHPUnit_Framework_TestCase
      */
     public function testInitializeInjectsCustomRenderer()
     {
-        $helper = new ViewModelHelper;
+        $helper = new ViewModelHelper();
         $this->initializer->initialize($helper, $this->helperPluginManager);
 
         $this->assertSame($this->renderer, $helper->getView());

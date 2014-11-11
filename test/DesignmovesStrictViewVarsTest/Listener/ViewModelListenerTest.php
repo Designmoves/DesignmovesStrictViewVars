@@ -58,7 +58,7 @@ class ViewModelListenerTest extends PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->event    = new ViewEvent;
+        $this->event    = new ViewEvent();
         $this->listener = new ViewModelListener(true);
     }
 
@@ -75,8 +75,8 @@ class ViewModelListenerTest extends PHPUnit_Framework_TestCase
      */
     public function testAttachesSetStrictVarsListener()
     {
-        $eventManager = new EventManager;
-        $eventManager->setSharedManager(new SharedEventManager);
+        $eventManager = new EventManager();
+        $eventManager->setSharedManager(new SharedEventManager());
         $eventManager->attach($this->listener);
 
         $id               = 'Zend\View\View';

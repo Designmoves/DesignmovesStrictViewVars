@@ -55,8 +55,8 @@ class ViewModelListenerFactoryTest extends PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->factory        = new ViewModelListenerFactory;
-        $this->serviceManager = new ServiceManager;
+        $this->factory        = new ViewModelListenerFactory();
+        $this->serviceManager = new ServiceManager();
     }
 
     /**
@@ -64,7 +64,7 @@ class ViewModelListenerFactoryTest extends PHPUnit_Framework_TestCase
      */
     public function testCanCreateService()
     {
-        $this->serviceManager->setService('DesignmovesStrictViewVars\Options\ModuleOptions', new ModuleOptions);
+        $this->serviceManager->setService('DesignmovesStrictViewVars\Options\ModuleOptions', new ModuleOptions());
         $listener = $this->factory->createService($this->serviceManager);
 
         $this->assertInstanceOf('DesignmovesStrictViewVars\Listener\ViewModelListener', $listener);

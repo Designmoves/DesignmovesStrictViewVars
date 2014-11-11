@@ -68,18 +68,18 @@ class PhpRendererFactoryTest extends PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->factory        = new PhpRendererFactory;
-        $this->serviceManager = new ServiceManager;
+        $this->factory        = new PhpRendererFactory();
+        $this->serviceManager = new ServiceManager();
 
-        $this->resolver            = new TemplatePathStack;
-        $this->helperPluginManager = new HelperPluginManager;
+        $this->resolver            = new TemplatePathStack();
+        $this->helperPluginManager = new HelperPluginManager();
 
-        $renderer = new PhpRenderer;
+        $renderer = new PhpRenderer();
         $renderer->setResolver($this->resolver);
         $this->helperPluginManager->setRenderer($renderer);
 
         $this->serviceManager->setService('ViewHelperManager', $this->helperPluginManager);
-        $this->serviceManager->setService('DesignmovesStrictViewVars\Options\ModuleOptions', new ModuleOptions);
+        $this->serviceManager->setService('DesignmovesStrictViewVars\Options\ModuleOptions', new ModuleOptions());
     }
 
     /**
