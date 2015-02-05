@@ -91,7 +91,7 @@ class ModuleTest extends PHPUnit_Framework_TestCase
         $listener = new ViewModelListener(true);
         $serviceManager->setService('DesignmovesStrictViewVars\Listener\ViewModelListener', $listener);
 
-        $event = new MvcEvent();
+        $event       = new MvcEvent();
         $application = new Application(array(), $serviceManager);
         $event->setApplication($application);
 
